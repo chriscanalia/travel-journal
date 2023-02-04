@@ -1,0 +1,10 @@
+:root {
+    /* How to create custom property/variable */
+    /* --name: value; */
+    --primary-clr: #F55A5A;
+    --text-small: .8rem;
+}
+
+.nav-title {
+    /* color: var(--primary-clr); */
+}

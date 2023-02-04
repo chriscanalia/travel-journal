@@ -1,0 +1,100 @@
+:root {
+  /* How to create custom property/variable */
+  /* --name: value; */
+  --primary-clr: #F55A5A;
+  --text-small: .8rem;
+  --text-large: 1.5rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+body {
+  
+  line-height: 1.6;
+  font-family: 'Lato', sans-serif;
+}
+
+img, picture, svg, video {
+  display: block; 
+  max-width: 100%;
+}
+
+section {
+  padding: 2rem;
+}
+
+
+
+/* colors  #918E9B #2B283A */
+
+.nav {
+  height: 70px;
+  background-color: var(--primary-clr);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.logo {
+  /* max-width: 30px;
+  height: auto; */
+  margin: auto 1rem;
+  object-fit: contain;
+
+}
+
+.nav-title {
+  color: #fff;
+  font-weight: 700;
+}
+
+.card {
+  display: flex;
+  max-width: 85%;
+  font-size: var(--text-small);
+  margin: 25px auto;
+}
+
+.card-image {
+  max-width: 175px;
+  object-fit: contain;
+}
+
+.card-info {
+  margin: .5rem 1rem;
+  align-self: center;
+}
+
+.location {
+  display: flex;
+}
+
+.marker {
+ margin: .1rem .3rem .1rem .1rem;
+ 
+ width: 13px;
+ object-fit: contain;
+ 
+ 
+}
+
+.google-link {
+  color: #918E9B;
+  margin-left: .5rem;
+}
+
+.destination {
+  font-size: var(--text-large);
+}
+
+.date {
+  display: inline-block;
+}
