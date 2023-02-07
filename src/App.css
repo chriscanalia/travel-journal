@@ -1,9 +1,10 @@
 :root {
   /* How to create custom property/variable */
   /* --name: value; */
-  --primary-clr: #F55A5A;
+  --clr-primary: #F55A5A;
   --text-small: .8rem;
   --text-large: 1.5rem;
+  --fw-bold: 700;
 }
 
 *,
@@ -19,6 +20,7 @@ body {
   
   line-height: 1.6;
   font-family: 'Lato', sans-serif;
+  font-size: 1.3rem;
 }
 
 img, picture, svg, video {
@@ -27,7 +29,7 @@ img, picture, svg, video {
 }
 
 section {
-  padding: 2rem;
+  padding: 2rem 0;
 }
 
 
@@ -36,7 +38,7 @@ section {
 
 .nav {
   height: 70px;
-  background-color: var(--primary-clr);
+  background-color: var(--clr-primary);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -63,8 +65,12 @@ section {
   margin: 25px auto;
 }
 
+.bg-dark {
+  background-color: #e5e5e5;
+}
+
 .card-image {
-  max-width: 175px;
+  max-width: 200px;
   object-fit: contain;
 }
 
@@ -80,7 +86,7 @@ section {
 .marker {
  margin: .1rem .3rem .1rem .1rem;
  
- width: 13px;
+ width: 11px;
  object-fit: contain;
  
  
@@ -93,8 +99,27 @@ section {
 
 .destination {
   font-size: var(--text-large);
+  font-weight: var(--fw-bold);
+  margin-bottom: 1.5rem;
 }
 
 .date {
   display: inline-block;
+  font-weight: var(--font-bold);
+}
+
+@media (max-width: 572px) {
+  .card {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1em;
+  }
+  .card-info {
+    align-items: center;
+  }
+    .destination {
+      font-size: 1.3rem;
+      font-weight: var(--fw-bold);
+      margin-bottom: 1.1rem;
+    }
 }

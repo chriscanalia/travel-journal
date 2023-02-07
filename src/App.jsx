@@ -17,13 +17,14 @@ function App() {
           return (
             <Card 
             key={place.id}
-            imgUrl={place.imageUrl}
-            location={place.location}
-            title={place.title}
-            googleMapsUrl= {place.googleMapsUrl}
-            startDate= {place.startDate}
-            endDate= {place.endDate}
-            description={place.description}
+            place={place}
+            // imgUrl={place.imageUrl}
+            // location={place.location}
+            // title={place.title}
+            // googleMapsUrl= {place.googleMapsUrl}
+            // startDate= {place.startDate}
+            // endDate= {place.endDate}
+            // description={place.description}
         />
           )
         })}
